@@ -75,6 +75,10 @@ button {
   text-decoration: none;
   color: inherit;
 }
+a {
+  text-decoration: none;
+    color: inherit;
+}
 
 /* logo */
 
@@ -318,7 +322,7 @@ position: relative;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   border: none;
-  transition: color var(--trns-fast), background-color var(--trns-fast);
+  transition: color var(--trns-fast), background-color var(--trns-fast); box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* benefits */
@@ -357,7 +361,7 @@ position: relative;
 
 .benefits-list .title {
   margin-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -523,7 +527,7 @@ p {
   border: 1px solid currentColor;
   border-radius: 4px;
   color: #AFB1B8;
-  transition: fill var(--trns-fast);
+  transition: color var(--trns-fast);
     
 }
 
@@ -543,9 +547,11 @@ p {
 .contact a {
   color: var(--primary-text-color);
   text-decoration: none;
+  transition: fill var(--trns-fast);
 }
 .address-item .address {
   color: var(--secondary-acent-text-color);
+  transition: color var(--trns-fast);
 }
 .contact.list a:hover,
 .contact.list a:focus {
@@ -673,6 +679,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 .element-link {
   display: block;
+  transition: color var(--trns-fast), background-color var(--trns-fast); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  
 }
 .ex-text {
@@ -742,7 +749,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.focus:hover .overlay {
+.element-link:hover .overlay, .element-link:focus .overlay {
   transform: translatey(0);
 }
 
